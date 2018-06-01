@@ -1,0 +1,30 @@
+gnumber = int(input('How many minimum consecutive days in a row do you want to conduct your new good habit (type a number, please)?'))
+print('You entered ' + str(gnumber) + ' days. We are going to work together to achieve this goal and make this good habit a natural part of you!!!')
+
+gmomentum = int(input('How many days in a row have you conducted your good habit?'))
+print('Great job!!! You have conducted your habit for ' + str(gmomentum) + ' days!')
+gdays_left = gnumber - gmomentum
+print('Awesome! You have ' + str(gdays_left) + ' left!')
+
+print('Look at your momentum!')
+for gmomentum in range(0, (gmomentum + 1)):
+  if gmomentum == (gmomentum + 1):
+    print('Boom!')
+  else:
+    print(str(gmomentum) + ' day(s)')
+
+print('Also, look at the days remaining!')
+while gdays_left in range(0, (gdays_left + 1)):
+  print(gdays_left)
+  gdays_left = gdays_left - 1
+  if gdays_left == 0:
+    print('Boom! Imagine how great it would feel to have the streak continue to this day! You would be so happy!')
+    
+gdaily = int(input('How many times in a day would you like to conduct your new habit?'))
+print('If you can plan to do your new good habit ' + str(gdaily) + ' times a day it would create a world of improvement for you!')
+
+if gdaily > 9:
+  print('You have a good understanding of what you may need!')
+else:
+  print('You may want to consider making more time to do this habit more times per day.')
+
